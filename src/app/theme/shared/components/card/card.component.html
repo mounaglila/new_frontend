@@ -1,0 +1,18 @@
+<div class="card" [class]="blockClass">
+  <div class="card-header">
+    <h5>{{ cardTitle }}</h5>
+    <div class="card-header-right" *ngIf="options">
+      <ul class="list-unstyled card-option">
+        <li><i class="material-icons md-spin">settings</i></li>
+        <li><i class="material-icons view-html">code</i></li>
+        <li><i class="icon-maximize full-card"></i></li>
+        <li><i class="icon-minimize minimize-card"></i></li>
+        <li><i class="material-icons reload-card">refresh</i></li>
+        <li><i class="icon-close close-card"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body">
+    <ng-content></ng-content>
+  </div>
+</div>

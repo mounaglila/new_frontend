@@ -1,0 +1,61 @@
+// Plugin styles
+// Animation
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 100%, 0);
+    visibility: visible;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+// Common plugin styles
+.plugin-animate {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+
+  &.fadeIn {
+    animation-name: fadeIn;
+  }
+
+  &.slideInUp {
+    animation-name: slideInUp;
+  }
+}
+
+// Scrollbar customization
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+
+  &:hover {
+    background: #555;
+  }
+}
+
+// Material Icons specific styles
+.material-icons {
+  &.plugin-spin {
+    animation: spin 2s linear infinite;
+  }
+
+  &.plugin-pulse {
+    animation: spin 1s steps(8) infinite;
+  }
+}

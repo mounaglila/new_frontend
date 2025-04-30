@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@use 'sass:color';
+@import 'scss/variables';
+@import 'scss/menu/menu-lite';
+@import 'scss/general';
+@import 'scss/generic';
+// Only import dashboard and sidebar related styles
+// @import 'scss/fonts/material-icons/material-icons';
+// @import 'scss/fonts/material-icons/icon-mapping';
+// @import 'scss/mixins/function';
+// @import 'scss/theme-elements/theme-elements';
+// @import 'scss/plugins/plugins';
+// @import 'scss/custom';

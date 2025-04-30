@@ -1,0 +1,44 @@
+.card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .card-header {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h5 {
+      margin: 0;
+      color: #333;
+      font-size: 18px;
+      font-weight: 600;
+    }
+
+    .card-header-right {
+      .card-option {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        li {
+          margin-left: 15px;
+          cursor: pointer;
+          color: #666;
+
+          &:hover {
+            color: #2196f3;
+          }
+        }
+      }
+    }
+  }
+
+  .card-body {
+    padding: 20px;
+  }
+}
